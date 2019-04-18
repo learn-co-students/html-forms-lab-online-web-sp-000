@@ -9,6 +9,21 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
+    <form action="/" method="post" id="company">
+      <label for="fullname">Enter Name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
+      <label for="email">Enter Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+      <label for="phone">Enter Telephone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Enter Message:</label>
+      <label for="checkbox">I have a message.</label>
+        <input type="checkbox" name="checkbox" id="checkbox" value="no">No
+        <input type="checkbox" name="checkbox" id="checkbox" value="yes">Yes
+      <textarea name="message" id="message" form="company" placeholder="Enter Message"></textarea>
+      <input type="submit" name="submit" id="submit">
+    </form>
+
 
     <!-- First, create a form tag where our inputs will be nested -->
 
@@ -43,6 +58,6 @@
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+
   </body>
 </html>
