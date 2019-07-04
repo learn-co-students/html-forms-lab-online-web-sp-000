@@ -19,6 +19,7 @@ RSpec.describe 'index.html' do
       expect(input.attributes["placeholder"]).to match(/Enter Name/) , "The first input should have a placeholder set to 'Enter Name'"
     end
 
+
     it 'contains an "email" type <input> tag with an id of "email" and placeholder equal to "Enter Email" ' do
       input = parsed_html.search('input')[1]
       expect(input.attributes["type"]).to_not be_nil, "No type attribute was found on the second 'input' tag"
@@ -29,11 +30,13 @@ RSpec.describe 'index.html' do
       expect(input.attributes["placeholder"]).to match(/Enter Email/) , "The second input should have a placeholder set to 'Enter Email'"
     end
 
+
     it 'includes the "required" attribute on the fullname and email input tags' do
       inputs = parsed_html.search('input')
       expect(inputs[0].attributes["required"]).to_not be_nil, "Add the 'required' attribute to the fullname input tag"
       expect(inputs[1].attributes["required"]).to_not be_nil, "Add the 'required' attribute to the email input tag"
     end
+
 
     it 'contains an "tel" type <input> tag with an id of "phone" and placeholder equal to "Enter Telephone (optional)" ' do
       input = parsed_html.search('input')[2]
@@ -44,6 +47,7 @@ RSpec.describe 'index.html' do
       expect(input.attributes["placeholder"]).to_not be_nil, "No placeholder attribute was found on the third 'input' tag"
       expect(input.attributes["placeholder"].value).to eq("Enter Telephone (optional)") , "The third input should have a placeholder set to 'Enter Telephone (optional)'"
     end
+
 
     it 'contains <label> tags for the fullname, email, phone and message form inputs ' do
       labels = parsed_html.search('label')
@@ -69,7 +73,8 @@ RSpec.describe 'index.html' do
       inputs = parsed_html.search('input')
       expect(inputs.any? { |i| i.attributes["type"].value == "checkbox" }).to be true
     end
-
+  
+  
     it 'contains a submit type input' do
       input = parsed_html.search('input').last
       expect(input.attributes["type"].value).to eq("submit")
