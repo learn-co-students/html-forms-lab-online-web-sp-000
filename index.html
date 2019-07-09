@@ -9,9 +9,30 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
-
     <!-- First, create a form tag where our inputs will be nested -->
+    <form action= "" method="GET">
+      <label for="fullname">What's your full name?</label>
+      <input id="fullname" type="text" placeholder="Enter Name" required>
 
+      <label for="email">What's your email?</label>
+      <input id="email" type="email" placeholder="Enter Email" required>
+
+      <label for="phone">What's your digits?</label>
+      <input id="phone" type="tel" placeholder="Enter Telephone (optional)">
+
+      <label for="message">What's your blog about?</label>
+      <textarea id="message" placeholder="Enter Message"</textarea>
+
+      <!-- <h3>What is your favorite place in Asia to travel to?</h3> -->
+        <input type="checkbox" name="asia-1" value="Thailand">Thailand <br>
+        <input type="checkbox" name="asia-2" value="Cambodia">Cambodia<br>
+        <input type="checkbox" name="asia-3" value="Vietnam">Vietnam<br>
+        <input type="checkbox" name="asia-4" value="Phillipines">Phillipines <br>
+        <input type="checkbox" name="asia-5" value="Japan">Japan<br>
+        <input type="checkbox" name="asia-6" value="other">other<br>
+
+        <input id= "submit" type="submit">
+    </form>
 
       <!-- Add a label for 'fullname'-->
 
@@ -43,6 +64,6 @@
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+
   </body>
 </html>
