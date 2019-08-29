@@ -11,38 +11,41 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form>
 
       <!-- Add a label for 'fullname'-->
-
+      <label id="fullname" for="fullname">Enter Name</label>
+      <input id="fullname" type="text" placeholder="Enter Name" required>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
 
       <!-- Add a label for 'email'-->
-
+      <label id="email" for="email">Enter Email</label>
+      <input id="email" type="email" placeholder="Enter Email" required>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
 
 
       <!-- Add a label for 'phone'-->
-
+      <label id="phone" for="phone">Enter Telephone (optional)</label>
+      <input id="phone" type="tel" placeholder="Enter Telephone (optional)">
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
 
-
       <!-- Add a label for 'message'-->
-
+      <label id="message" for="message">Enter Message</label>
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
+      <input type="checkbox" name="quick_response" value="qr"> Quick Response <br>
 
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
