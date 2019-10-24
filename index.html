@@ -11,38 +11,58 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+    <form> <!--action="http://example.com/process-user.php" method="GET">-->
 
+      <!--input type="text" name="fullname" required>
+      <input type="email" name="email" required>
+      <input type="tel" name="phone">
+      <input type="text" name="message">
+      <input type="checkbox" name="reached">
+      <input type="submit" value="submit">
+    </form>-->
 
       <!-- Add a label for 'fullname'-->
-
+      <label for="fullname">What's your name?</label>
+      <input id="fullname" type="text" name="fullname" placeholder="Enter Name" required>
+      <br>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
 
       <!-- Add a label for 'email'-->
-
+      <label for="email">What's your email?</label>
+      <input id="email" type="email" name="email" placeholder="Enter Email" required>
+      <br>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
 
 
       <!-- Add a label for 'phone'-->
-
+      <label for="phone">What's your telephone number?</label>
+      <input id="phone" type="tel" name="phone" placeholder="Enter Telephone (optional)">
+      <br>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
 
 
       <!-- Add a label for 'message'-->
-
+      <label for="message">What's your message?</label>
+      <textarea id="message" type="text" name="message" placeholder="Enter Message"></textarea>
+      <br>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <h3>What are your dogs favorite toys?</h3>
+      <input type="checkbox" name="reached-1" value="email">Email <br>
+      <input type="checkbox" name="reached-2" value="promotions">Promotions<br>
+      <input type="checkbox" name="reached-3" value="newsletter">Newsletter<br>
+      <input type="checkbox" name="reached-4" value="not-interested">Not Interested<br>
+      <br>
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+      <input type="submit" value="submit">
+    </form>
   </body>
 </html>
