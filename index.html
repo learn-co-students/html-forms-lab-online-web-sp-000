@@ -11,38 +11,23 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
-
-      <!-- Add a label for 'fullname'-->
-
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
-
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+    <form method= "GET">
+      <label for="fullname">What's Your Full Name?</label>
+        <input type="text" id= "fullname" placeholder="Enter Name" required>
+      <label for="email">What's Your Email Address?</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+      <label for="phone">What's Your Phone Number?</label>
+        <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Have Additional Information?</label>
+        <textarea id="message" name="message" placeholder="Enter Message">
+      <h3>What's Your Favorite Color?</h3>
+        <input type="checkbox" name="color-1" value="red">Red<br>
+        <input type="checkbox" name="color-2" value="green">Green<br>
+        <input type="checkbox" name="color-3" value="blue">Blue<br>
+        <input type="checkbox" name="color-4" value="other">Other<br>
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+      <input type="submit" value="I'm Done!">
+    </form>
   </body>
 </html>
