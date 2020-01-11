@@ -11,38 +11,48 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="post">
 
       <!-- Add a label for 'fullname'-->
-
+      <label for="fullname">fullname</label>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
+      <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
 
       <!-- Add a label for 'email'-->
-
+      <label for="email">email</label>
       <!-- Add a email input with the id and name attributes set to 'email' -->
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
       <!-- Include the place holder text "Enter Email" and make this input required -->
 
 
       <!-- Add a label for 'phone'-->
-
+      <label for="phone">phone</label>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
+      <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
       <!-- Include the place holder text "Enter Telephone (optional)" -->
 
 
       <!-- Add a label for 'message'-->
-
+      <label for="message">message</label>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
       <!-- Include the place holder text "Enter Message" -->
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
+      <h3>What are your dogs favorite toys?</h3>
+      <input type="checkbox" id="checkbox" name="toy-1" value="kong"> Kong <br>
+      <input type="checkbox" id="checkbox" name="toy-2" value="stuffed-animals">Stuffed Animals<br>
+      <input type="checkbox" id="checkbox" name="toy-3" value="rope-toys">Rope Toys<br>
+      <input type="checkbox" id="checkbox" name="toy-4" value="squeaky-toys">Squeaky Toys<br>
+      <input type="checkbox" id="checkbox" name="toy-5" value="balls">Balls, Frisbees, anything a dog can fetch!<br>
 
 
       <!-- Add an input with the type set to 'submit' -->
+      <input type="submit" value="Let me walk your dog!">
 
-    
+    </form>
   </body>
 </html>
