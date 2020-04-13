@@ -11,38 +11,52 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+		<form action="">
 
       <!-- Add a label for 'fullname'-->
+			<label for="fullname">Full name</label>
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
+			<input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
 
 
       <!-- Add a label for 'email'-->
+			<label for="email">E-mail Address</label>
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
+			<input type="email" id="email" placeholder="Enter Email" required>
 
 
       <!-- Add a label for 'phone'-->
+			<label for="phone">Phone number</label>
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+			<input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
 
       <!-- Add a label for 'message'-->
+			<label for="message">Message</label>
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
+			<textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
+			<h3>What games do you play?</h3>
+			<input type="checkbox" name="game-1" value="underlords">Underlords<br>
+			<input type="checkbox" name="game-2" value="overwatch">Overwatch<br>
+			<input type="checkbox" name="game-3" value="wizard-of-legend">Wizard of Legend<br>
+			<input type="checkbox" name="game-4" value="slay-the-spire">Slay the spire<br>
+			<input type="checkbox" name="game-5" value="monster-hunter">Monster hunter<br>
+
 
 
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+			<input type="submit" value="submit">
+    </form>
   </body>
 </html>
