@@ -13,15 +13,21 @@
     <!-- First, create a form tag where our inputs will be nested -->
     <form>
       <input id="fullname" type="text" name="fullname" placeholder="Enter Name" required>
-      <input id="email" type="email" placeholder="Enter Email" required>
-      <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
       <label for="fullname">Fullname</label>
-      <label for="email">Email</label>   
+      <input id="email" type="email" placeholder="Enter Email" required>
+      <label for="email">Email</label>
+      <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
       <label for="phone">Phone</label>
-      <label for="message">Message</label>
       <textarea id="message" placeholder="Enter Message"></textarea>
-      <input type="checkbox">
+      <label for="message">Message</label>
+      <h3>What are your dogs favorite toys?</h3>
+      <input type="checkbox" id="checkbox" name="toy-1" value="kong"> Kong <br>
+      <input type="checkbox" id="checkbox" name="toy-2" value="stuffed-animals">Stuffed Animals<br>
+      <input type="checkbox" id="checkbox" name="toy-3" value="rope-toys">Rope Toys<br>
+      <input type="checkbox" id="checkbox" name="toy-4" value="squeaky-toys">Squeaky Toys<br>
+      <input type="checkbox" id="checkbox" name="toy-5" value="balls">Balls, Frisbees, anything a dog can fetch!<br>
       <input type="submit">
+      <input type="submit" value="Let me walk your dog!">
     </form>
     <!-- <input type="text" name="owner-name" placeholder="Full Name"> -->
       <!-- Add a label for 'fullname'-->
