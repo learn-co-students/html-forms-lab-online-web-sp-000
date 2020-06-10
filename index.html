@@ -11,38 +11,29 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+      <form action="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
 
-      <!-- Add a label for 'fullname'-->
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter Message">
 
+        <h3>What are your business needs?</h3>
+        <input type="checkbox" id="checkbox" name="option-1" value="accounting">Help with Accounting <br>
+        <input type="checkbox" id="checkbox"  name="option-2" value="marketing">Help with Marketing <br>
 
-      <!-- Add a label for 'email'-->
+        <input type="submit" value="Submit">
 
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      </form>
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+
   </body>
 </html>
