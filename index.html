@@ -11,7 +11,21 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form method ="GET">
+      <label for="fullname">Provide your first and last name</label>
+      <input id="fullname" type="text" name="fullname" placeholder="Enter Name" required>
+      <label for="email"> Enter your email address </label>
+      <input id="email" type="email" name="email" placeholder="Enter Email" required>
+      <label for="phone"> Enter your cell phone number</label>
+      <input id="phone" type="tel" name="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Please enter a message</label>
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
+      <h3> What is (are) your favorite video game console(s)?</h3>
+      <input type="checkbox" name="console-1" value="Nintendo Switch"> Nintendo Switch <br> 
+      <input type="checkbox" name="console-2" value="Sony PS4"> Sony PS4 <br> 
+      <input type="checkbox" name="console-3" value="Microsoft Xbox One"> Microsoft Xbox One <br>
+      <input type="submit" value="submit">
+    </form>
 
       <!-- Add a label for 'fullname'-->
 
