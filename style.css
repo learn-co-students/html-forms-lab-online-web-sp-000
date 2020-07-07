@@ -1,10 +1,19 @@
 form * {
   display: block;
-  width: 80%;
-  margin: 1em;
+  margin-left: 1em;
 }
 
 #checkbox {
-  display:inline;
-
+  display: inline;
+  margin-right: 0px;
 }
+
+#checkbox-label {
+  margin-left: 0;
+  display: inline;
+}
+
+form input, form textarea {
+  margin-bottom: 1em;
+}
+
