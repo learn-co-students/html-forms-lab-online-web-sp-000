@@ -11,6 +11,23 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+    <form action="http://www.example.com" method="POST">
+      <label for="fullname">Full name:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" required>
+      <label for="phone">Telephone:</label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Message:</label>
+      <textarea type="textarea" name="message" id="message" placeholder="Enter Message"></textarea>
+      <h4>Where do you want to go today?</h4>
+      <input type="checkbox" name="place_1" value="rome"> Rome, Italy <br>
+      <input type="checkbox" name="place_2" value="paris"> Paris, France <br>
+      <input type="checkbox" name="place_3" value="london"> London, England <br>
+      <input type="checkbox" name="place_4" value="tokyo"> Tokyo, Japan <br>
+      <input type="checkbox" name="place_5" value="syndey"> Sydney, Australia <br>
+      <input type="submit" value="Please click here to submit your form.">
+    </form>
 
 
       <!-- Add a label for 'fullname'-->
