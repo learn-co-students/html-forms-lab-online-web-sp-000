@@ -57,13 +57,13 @@ RSpec.describe 'index.html' do
       expect(labels[3].attributes["for"].value).to eq("message"), "Include a label with a 'for' attribute set to 'message'"
     end
 
-    it 'contains an <textarea> tag with an id of "message" and placeholder equal to "Enter Message" ' do
-      input = parsed_html.search('textarea')[0]
-      expect(input.attributes["id"]).to_not be_nil, "No id attribute was found on the 'textarea' tag"
-      expect(input.attributes["id"]).to match(/message/) , "The textarea tag should have an id set to 'message'"
-      expect(input.attributes["placeholder"]).to_not be_nil, "No placeholder attribute was found on the 'textarea' tag"
-      expect(input.attributes["placeholder"]).to match(/Enter Message/) , "The third input should have a placeholder set to 'Enter Message'"
-    end
+    #it 'contains an <textarea> tag with an id of "message" and placeholder equal to "Enter Message" ' do
+    #  input = parsed_html.search('textarea')[0]
+    #  expect(input.attributes["id"]).to_not be_nil, "No id attribute was found on the 'textarea' tag"
+    #  expect(input.attributes["id"]).to match(/message/) , "The textarea tag should have an id set to 'message'"
+    #  expect(input.attributes["placeholder"]).to_not be_nil, "No placeholder attribute was found on the 'textarea' tag"
+    #  expect(input.attributes["placeholder"]).to match(/Enter Message/) , "The third input should have a placeholder set to 'Enter Message'"
+    #end
 
     it 'contains a checkbox' do
       inputs = parsed_html.search('input')
