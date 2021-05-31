@@ -11,38 +11,42 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form>
 
       <!-- Add a label for 'fullname'-->
-
+    <label for="fullname">name:</label>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
       <!-- Include the place holder text "Enter Name" and make this input required -->
-
+     
 
       <!-- Add a label for 'email'-->
-
+    <label for="email">email:</label>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+    <input type="email" name="email" id="email" placeholder="Enter Email" required>
 
       <!-- Add a label for 'phone'-->
-
+    <label for="phone">phone:</label>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+    <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
 
       <!-- Add a label for 'message'-->
-
+    <label for="message">message</label> 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
+    <textarea id="message" name="message" placeholder="Enter Message"> 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <h3>What is your favorite animal?</h3>      
+      <input type="checkbox" id="checkbox" name="animal-1" value="dog">Dog<br> 
+      <input type="checkbox" id="checkbox" name="animal-2" value="cat">Cat<br>
+      <input type="checkbox" id="checkbox" name="animal-3" value="fish">Fish<br>
 
       <!-- Add an input with the type set to 'submit' -->
-
+     <input type="submit" value="Please submit your form">
+    </form>
     
   </body>
 </html>
