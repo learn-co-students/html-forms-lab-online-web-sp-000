@@ -10,39 +10,48 @@
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
-
-
+  <form action="http://www.google.com" method="GET">
+ 
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
+    <label for="fullname">Enter Name</label>
+    <input id="fullname" type="text" name="fullname" placeholder="Enter Name" required>
 
       <!-- Add a label for 'email'-->
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      
+    <label for="email">Enter Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Email" required>
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      
+      <label for="phone">Enter Telephone (optional)</label>
+      <input id="phone" type="tel" name="phone" placeholder="Enter Telephone (optional)">
 
       <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
+      <label for="message">Enter Message</label>
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <h3>Where do you live?</h3>
+      <input type= "checkbox" name="location-1" value="West-Coast">West Coast<br>
+      <input type= "checkbox" name="location-2" value="Mountains">Mountains<br>
+      <input type= "checkbox" name="location-3" value="Midwest">Midwest<br>
+      <input type= "checkbox" name="location-4" value="East-Coast">East Coast<br>
+    
 
       <!-- Add an input with the type set to 'submit' -->
-
+      <input type="submit" value="Submit Form">
+      
+  </form>
     
   </body>
 </html>
