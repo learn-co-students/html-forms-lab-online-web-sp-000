@@ -11,7 +11,19 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="http://example.com/process-user.php" method="get">
+      <label for="fullname">What is your fullname?</label>
+      <input type="text" id="fullname" placeholder="Enter Name" required>
+      <label for="email">What is your email?</label>
+      <input type="email" id="email" placeholder="Enter Email" required>
+      <label for="phone">What is your telephone number?</label>
+      <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Leave a message</label>
+      <textarea id="message" placeholder="Enter Message"></textarea>
+      <input type="checkbox" name="toy-1" value="kong"> Kong <br>
+      <input type="checkbox" name="toy-2" value="stuffed-animals">Stuffed Animals<br>
+      <input type="submit" value="submit">
+    </form>
 
       <!-- Add a label for 'fullname'-->
 
@@ -43,6 +55,6 @@
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+
   </body>
 </html>
